@@ -67,7 +67,7 @@ endif()
 # Remove project root from the __FILE__ macro variable
 add_compile_options(-fmacro-prefix-map=${CMAKE_SOURCE_DIR}=.)
 
-add_compile_options(-msse4.2 -mavx2)
+# add_compile_options(-msse4.2 -mavx2)
 add_compile_definitions(ROCKSDB_NAMESPACE=rocksdb_internal)
 include(cmake/Sanitizers.cmake)
 include(cmake/CompileFlags.cmake)
