@@ -2,11 +2,11 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "build" ]
 
 jobs:
   build:
-    runs-on: self-hosted  # or `ubuntu-22.04`
+    runs-on: ubuntu-22.04
 
     steps:
     - uses: actions/checkout@v4
