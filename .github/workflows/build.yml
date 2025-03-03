@@ -25,7 +25,9 @@ jobs:
         run: |
           sudo apt install -y cmake libuv1-dev liblz4-dev liblzma-dev libdouble-conversion-dev libdwarf-dev libunwind-dev
           sudo apt install -y libaio-dev libgflags-dev libgoogle-glog-dev libgtest-dev libgmock-dev clang-format-14 clang-14 clang-tidy-14 lld-14
-          sudo apt install -y libgoogle-perftools-dev google-perftools libssl-dev libclang-rt-14-dev gcc-12 g++-12 libboost-all-dev meson rustc cargo
+          sudo apt install -y libgoogle-perftools-dev google-perftools libssl-dev gcc-12 g++-12 libboost-all-dev meson rustc cargo
+          ls -all /usr/lib/llvm-14/lib/clang
+          ls -all /usr/lib/llvm-14/lib/clang/14.0.0/lib/linux/
           wget https://github.com/apple/foundationdb/releases/download/7.3.59/foundationdb-clients_7.3.59-1_aarch64.deb && sudo dpkg -i foundationdb-clients_7.3.59-1_aarch64.deb
           wget https://github.com/apple/foundationdb/releases/download/7.3.59/foundationdb-server_7.3.59-1_aarch64.deb && sudo dpkg -i foundationdb-server_7.3.59-1_aarch64.deb
           git clone https://github.com/libfuse/libfuse.git libfuse -b fuse-3.16.2 --depth 1 && mkdir libfuse/build && cd libfuse/build && meson setup .. && ninja && sudo ninja install && cd ../.. && rm -rf libfuse
