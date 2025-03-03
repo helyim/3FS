@@ -17,7 +17,7 @@ lazy_static = "1"
 libc = "0"
 lockmap = "0.1.6"
 rand = "0"
-rocksdb = { version = "0", default-features = false }
+rocksdb = "0"
 rolling-file = "0"
 serde = { version = "1", features = ["derive"] }
 static_assertions = "1"
