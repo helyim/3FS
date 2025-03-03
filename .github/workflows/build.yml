@@ -29,6 +29,7 @@ jobs:
           wget https://github.com/apple/foundationdb/releases/download/7.3.59/foundationdb-clients_7.3.59-1_aarch64.deb && sudo dpkg -i foundationdb-clients_7.3.59-1_aarch64.deb
           wget https://github.com/apple/foundationdb/releases/download/7.3.59/foundationdb-server_7.3.59-1_aarch64.deb && sudo dpkg -i foundationdb-server_7.3.59-1_aarch64.deb
           git clone https://github.com/libfuse/libfuse.git libfuse -b fuse-3.16.2 --depth 1 && mkdir libfuse/build && cd libfuse/build && meson setup .. && ninja && sudo ninja install && cd ../.. && rm -rf libfuse
+          ls -all /usr/local/lib/
           git submodule update --init --recursive
           ./patches/apply.sh
 
