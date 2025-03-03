@@ -18,7 +18,7 @@
 	url = https://github.com/pybind/pybind11.git
 [submodule "third_party/clickhouse-cpp"]
 	path = third_party/clickhouse-cpp
-	url = https://github.com/ClickHouse/clickhouse-cpp.git
+	url = https://github.com/iamazy/clickhouse-cpp.git
 [submodule "third_party/fmt"]
 	path = third_party/fmt
 	url = https://github.com/fmtlib/fmt.git
