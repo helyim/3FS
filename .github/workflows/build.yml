@@ -37,6 +37,6 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         path: |
-          build/*
+          build/bin/*
         name: 3fs-x86-64
         compression-level: 9
