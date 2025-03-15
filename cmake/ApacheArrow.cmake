@@ -14,7 +14,7 @@ cmake_policy(SET CMP0097 NEW)
 if(CMAKE_VERSION VERSION_GREATER_EQUAL 3.28)
     set(ARROW_BUILD_PARALLEL "")
 else()
-    set(ARROW_BUILD_PARALLEL "-j8")
+    set(ARROW_BUILD_PARALLEL "-j1")
 endif()
 
 include(ExternalProject)
