@@ -35,8 +35,8 @@ jobs:
         cmake -S . -B build -DCMAKE_CXX_COMPILER=clang++-14 -DCMAKE_C_COMPILER=clang-14 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
         cmake --build build -j 32
     - uses: actions/upload-artifact@v4
-        with:
-          path: |
-            build/*
-          name: 3fs-aarch64
-          compression-level: 9
+      with:
+        path: |
+          build/*
+        name: 3fs-aarch64
+        compression-level: 9
